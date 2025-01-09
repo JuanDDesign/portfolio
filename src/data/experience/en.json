@@ -1,0 +1,37 @@
+[
+  {
+    "company": "Flebee",
+    "date": "Sept 2024 - Now",
+    "title": "Founder and Head of Product",
+    "descriptions": [
+      "I´m working my own entrepreneurial venture with an app that enables transportation companies to efficiently manage their vehicles and teams."
+    ]
+  },
+  {
+    "company": "Croper.com",
+    "title": "Product Owner",
+    "date": "Apr 2023 - Sept 2024",
+    "descriptions": [
+      "Spearheaded strategic initiatives at Colombia's largest agro marketplace.",
+      "Increase conversion rate from 7% to 14.2% through platform enhancements.",
+      "Utilized analytics tools such as Clarity, Google Analytics, Power BI to identify pain points and guide development prioritization"
+    ]
+  },
+  {
+    "title": "UX UI Lead",
+    "company": "Nomadas Cargo",
+    "date": "Nov 2022 - Apr 2023",
+    "descriptions": [
+      "Conducted thorough research, design, and prototype testing.",
+      "Utilized iterative prototyping methods to refine designs based on user feedback and industry insights."
+    ]
+  },
+  {
+    "title": "Jr UX/UI Designer",
+    "date": "Sep 2021 - Nov 2022",
+    "company": "Incubapp Venture Capital",
+    "descriptions": [
+      "Designed and prototyped a user-friendly webpage aimed at students with no prior job experience, helping them transition into the workforce."
+    ]
+  }
+]
