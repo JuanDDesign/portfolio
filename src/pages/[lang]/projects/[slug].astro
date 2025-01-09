@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Layout from "@/layouts/Layout.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Roles from "@/components/Roles.astro";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+
+  return projects.map((project) => {
+    const [lang, ...slug] = project.id.split("/");
+
+    return { params: { lang, slug: slug.join("/") }, props: project };
+  });
+}
+
+const project = Astro.props;
+const { Content } = await render(project);
+const { title, description, roles } = project.data;
+const thumbnail = `/projects/${Astro.params.slug}.webp`;
+---
+
+<Layout title={project.data.title} description={project.data.description} thumbnail={thumbnail}>
+  <SectionContainer
+    class="py-16 md:py-36 prose dark:prose-invert prose-headings:text-purple-600 dark:prose-headings:text-purple-400 marker:text-purple-600 dark:marker:text-purple-400 prose-p:text-pretty prose-headings:text-balance"
+  >
+    <img src={thumbnail} alt={title} class="rounded-lg object-cover size-full m-0" />
+    <h1 class="my-6">{title}</h1>
+    <Roles value={roles} class="list-none m-0 p-0 *:m-0 *:p-0" />
+    <p>{description}</p>
+
+    <Content />
+  </SectionContainer>
+</Layout>
