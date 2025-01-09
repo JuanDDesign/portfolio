@@ -1,0 +1,24 @@
+---
+import { DEFAULT_LANG, getLanguages } from "@/i18n";
+
+const url = Astro.url;
+const newUrl = `${url.origin}/${DEFAULT_LANG}`;
+
+const languages = getLanguages(Astro);
+---
+
+<!doctype html>
+<html lang={languages.selected.key}>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting to: {newUrl}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content=`0;url=${newUrl}` />
+    {languages.all.map(({ url, key }) => <link rel="alternate" href={url} hreflang={key} />)}
+  </head>
+
+  <body>
+    <a href={url.origin}>Redirecting from <code>/</code> to <code>{newUrl}</code></a>
+  </body>
+</html>
