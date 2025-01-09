@@ -1,0 +1,94 @@
+---
+import { getLanguages, useTranslations } from "@/i18n";
+import FlagEsIcon from "@/icons/flag-es.svg";
+import FlagUsIcon from "@/icons/flag-us.svg";
+
+const languages = getLanguages(Astro, { en: FlagUsIcon, es: FlagEsIcon });
+---
+
+<div class="relative">
+  <button
+    transition:persist
+    id="language-btn"
+    class="appearance-none items-center justify-center border-none size-9 flex hover:scale-125 transition"
+  >
+    <span class="sr-only">{useTranslations(Astro, "language.select")}</span>
+    {
+      languages.all.map((language) => (
+        <language.icon
+          data-id={language.key}
+          aria-label={language.label}
+          class={`language-icon size-5 transition-all ${language.key === languages.selected.key ? "" : "absolute"}`}
+        />
+      ))
+    }
+  </button>
+
+  <div
+    transition:persist
+    id="language-menu"
+    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+  >
+    <ul>
+      {
+        languages.all.map((language) => (
+          <li>
+            <a
+              href={language.url}
+              data-id={language.key}
+              class="flex items-center gap-1.5 px-2 py-1.5 hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm"
+            >
+              <language.icon aria-label={language.label} class="size-4" />
+              {language.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  #language-menu.open {
+    display: inline;
+    animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes scale-up-center {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+</style>
+
+<script is:inline>
+  const languageMenu = document.getElementById("language-menu");
+  const languages = Array.from(document.querySelectorAll(".language-icon"));
+
+  const toggleLanguageMenu = (event) => {
+    event.stopPropagation();
+    languageMenu.classList.toggle("open");
+  };
+
+  const updateLanguageIcon = (event) => {
+    const language = event.target.closest("a")?.dataset.id;
+
+    if (!language) return;
+
+    languages.forEach((element) => {
+      element.style.scale = element.dataset.id === language ? "1" : "0";
+    });
+  };
+
+  document.getElementById("language-btn").addEventListener("click", toggleLanguageMenu);
+  languageMenu.addEventListener("click", updateLanguageIcon);
+  document.addEventListener("click", () => {
+    if (languageMenu.classList.contains("open")) languageMenu.classList.remove("open");
+  });
+</script>

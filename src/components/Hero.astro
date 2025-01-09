@@ -1,0 +1,56 @@
+---
+import Badge from "@/components/Badge.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import { FULL_NAME, getLanguage, useTranslations } from "@/i18n";
+import DownloadIcon from "@/icons/download.svg";
+import LinkedInIcon from "@/icons/linked-in.svg";
+import MailForwardIcon from "@/icons/mail-forward.svg";
+
+const language = getLanguage(Astro);
+const cvaLink = `/cv/${language}.pdf`;
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      width="64"
+      height="64"
+      src="/me.webp"
+      alt={FULL_NAME}
+      class="rounded-full size-16 object-cover bg-black/20 dark:bg-yellow-500/5 object-center"
+    />
+
+    <a
+      target="_blank"
+      rel="noopener"
+      href="https://linkedin.com/in/juanddesign"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>{useTranslations(Astro, "badge.available")}</Badge>
+    </a>
+  </div>
+
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+    {useTranslations(Astro, "greeting.hello")}
+  </h1>
+  <p class="mt-6 text-xl text-gray-800 dark:*:text-purple-400 *:text-purple-600 *:font-semibold dark:text-gray-300">
+    <slot />
+  </p>
+
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:juand.design@gmail.com">
+      <MailForwardIcon class="size-5" />
+      {useTranslations(Astro, "social.contact")}
+    </SocialPill>
+
+    <SocialPill href="https://linkedin.com/in/juanddesign">
+      <LinkedInIcon class="size-5" />
+      {useTranslations(Astro, "social.linkedin")}
+    </SocialPill>
+
+    <SocialPill href={cvaLink}>
+      <DownloadIcon class="size-5" />
+      {useTranslations(Astro, "social.cv")}
+    </SocialPill>
+  </nav>
+</div>

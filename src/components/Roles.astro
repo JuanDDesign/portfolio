@@ -1,0 +1,30 @@
+---
+import type { Roles } from "@/content.config";
+import FigmaIcon from "@/icons/figma.svg";
+
+const TAGS = {
+  "UX/UI": { class: "bg-purple-600/30 text-white", icon: FigmaIcon },
+  "Product Lead": { class: "bg-purple-600/30 text-white", icon: FigmaIcon },
+  "Product Owner": { class: "bg-purple-600/30 text-white", icon: FigmaIcon },
+} as const satisfies Record<Roles, { icon: unknown; class: string }>;
+
+interface Props {
+  value: Roles[];
+  class?: string;
+}
+
+const roles = Astro.props.value.map((role) => ({ ...TAGS[role], name: role }));
+---
+
+<ul class={`${Astro.props.class ?? ""} flex flex-row mb-2 gap-x-2`}>
+  {
+    roles.map((role) => (
+      <li>
+        <span class={`flex gap-x-2 rounded-full text-xs ${role.class} py-1 px-2`}>
+          <role.icon class="size-4" />
+          {role.name}
+        </span>
+      </li>
+    ))
+  }
+</ul>

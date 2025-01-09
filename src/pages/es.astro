@@ -1,0 +1,75 @@
+---
+import AboutMe from "@/components/AboutMe.astro";
+import Experience from "@/components/Experience.astro";
+import Hero from "@/components/Hero.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import TitleSection from "@/components/TitleSection.astro";
+import { FULL_NAME } from "@/i18n";
+import BriefcaseIcon from "@/icons/briefcase.svg";
+import CodeIcon from "@/icons/code.svg";
+import UserCheckIcon from "@/icons/user-check.svg";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+  title={`${FULL_NAME} - Portafolio de Diseño y Gestión de Productos`}
+  description="Explora mis proyectos como Product Owner, Diseñador UX/UI y Líder de Producto, mostrando soluciones innovadoras y diseños impactantes."
+>
+  <SectionContainer class="py-16 md:py-36">
+    <Hero>
+      Soy un <strong> Diseñador Industrial formado </strong> enfocado en el diseño de productos. +3 años de experiencia como
+      <strong> Diseñador UX/UI, Product Owner y Jefe de Producto. </strong>
+    </Hero>
+  </SectionContainer>
+
+  <div class="space-y-24">
+    <SectionContainer id="experience">
+      <TitleSection>
+        <BriefcaseIcon class="size-9" />
+        Experiencia laboral
+      </TitleSection>
+
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <TitleSection>
+        <CodeIcon class="size-9" />
+        Proyectos
+      </TitleSection>
+
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="about-me">
+      <TitleSection>
+        <UserCheckIcon class="size-9" />
+        Sobre mí
+      </TitleSection>
+
+      <AboutMe>
+        <p>
+          Hola, soy Juan David Riaño, aunque la mayoría me llama JuanDa. Mi camino en el diseño UX/UI comenzó mientras
+          terminaba mi carrera, y rápidamente se convirtió en mi pasión. A lo largo de los años, he tenido la
+          oportunidad de trabajar con diferentes empresas como Diseñador de Producto, desarrollando mis habilidades y
+          adquiriendo una valiosa experiencia.
+        </p>
+
+        <p>
+          En mi último cargo, asumí el rol de <strong>Product Owner</strong>, lo que me permitió fortalecer mis
+          habilidades de gestión y adquirir un sólido entendimiento sobre cómo monetizar productos digitales. También
+          aprendí a evaluar el <strong>éxito de las iniciativas a través de métricas de ROI</strong>, asegurando que
+          cada esfuerzo generara un valor real.
+        </p>
+
+        <p>
+          Actualmente, estoy enfocado en mejorar mis habilidades técnicas, especialmente en <strong
+            >desarrollo FrontEnd con HTML, CSS y JavaScript</strong
+          >. Este portafolio es un reflejo de mi proceso de aprendizaje continuo y mi pasión por crear experiencias
+          digitales impactantes.
+        </p>
+      </AboutMe>
+    </SectionContainer>
+  </div>
+</Layout>
