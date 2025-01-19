@@ -1,11 +1,13 @@
 ---
 import type { Roles } from "@/content.config";
-import FigmaIcon from "@/icons/figma.svg";
+import FigmaIcon from "@/icons/brand-figma.svg";
+import Owner from "@/icons/product-owner.svg";
+import Lead from "@/icons/product-owner.svg";
 
 const TAGS = {
-  "UX/UI": { class: "bg-purple-600/30 text-white", icon: FigmaIcon },
-  "Product Lead": { class: "bg-purple-600/30 text-white", icon: FigmaIcon },
-  "Product Owner": { class: "bg-purple-600/30 text-white", icon: FigmaIcon },
+  "UX/UI": { class: "text-black bg-purple-300 dark:bg-purple-600/30 dark:text-white", icon: FigmaIcon },
+  "Product Lead": { class: "text-black bg-purple-300 dark:bg-purple-600/30 dark:text-white", icon: Lead },
+  "Product Owner": { class: "text-black bg-purple-300 dark:bg-purple-600/30 dark:text-white", icon: Owner },
 } as const satisfies Record<Roles, { icon: unknown; class: string }>;
 
 interface Props {

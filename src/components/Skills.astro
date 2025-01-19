@@ -1,0 +1,54 @@
+---
+import GA4 from "@/icons/google-analytics.svg";
+import FigmaBrandIcon from "@/icons/figma.svg";
+import Maze from "@/icons/maze.svg";
+import Protopie from "@/icons/protopie.svg";
+import Jira from "@/icons/jira.svg";
+import Slack from "@/icons/slack.svg";
+import Lean from "@/icons/lean.svg";
+import Design from "@/icons/design.svg";
+import Scrum from "@/icons/scrum.svg";
+import PowerBi from "@/icons/power-bi.svg";
+import Miro from "@/icons/miro.svg";
+
+interface Props {
+  title: string;
+  type: keyof typeof ALL_SKILLS;
+}
+
+const ALL_SKILLS = {
+  "UX/UI": [
+    { label: "Figma", icon: FigmaBrandIcon },
+    { label: "Maze", icon: Maze },
+    { label: "Protopie", icon: Protopie },
+    { label: "Miro", icon: Miro },
+  ],
+  "project-management": [
+    { label: "Jira", icon: Jira },
+    { label: "Google analytics", icon: GA4 },
+    { label: "Slack", icon: Slack },
+    { label: "Power-bi", icon: PowerBi },
+  ],
+  methodologies: [
+    { label: "Lean", icon: Lean },
+    { label: "Design", icon: Design },
+    { label: "SCRUM", icon: Scrum },
+  ],
+} as const;
+
+const { title, type } = Astro.props;
+const skills = ALL_SKILLS[type];
+---
+
+<h4 class="mb-6 text-xl font-semibold gap-x-3 text-black/80 dark:text-white">{title}</h4>
+
+<ul class="grid gap-8 text-gray-500 grid-cols-[repeat(auto-fill,minmax(10rem,1fr))] sm:gap-12 dark:text-gray-400">
+  {
+    skills.map((skill) => (
+      <li class="flex items-center justify-center">
+        <skill.icon class="h-16 aspect-video transition duration-200 grayscale-[70%] hover:grayscale-0 hover:text-dark dark:hover:text-white" />
+        <span class="sr-only">{skill.label}</span>
+      </li>
+    ))
+  }
+</ul>

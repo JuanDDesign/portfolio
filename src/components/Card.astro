@@ -1,0 +1,18 @@
+---
+interface Props {
+  class?: string;
+  alt?: string;
+  thumbnail?: string;
+}
+
+const { thumbnail, alt = "" } = Astro.props;
+---
+
+<article
+  class={`${Astro.props.class ?? ""} rounded-xl prose-headings:my-0 prose-p:my-0 bg-purple-100/70 dark:bg-purple-950/15`}
+>
+  {thumbnail && <img src={thumbnail} alt={alt} class="object-cover rounded-t-xl w-full aspect-square m-0" />}
+  <div class="p-4">
+    <slot />
+  </div>
+</article>

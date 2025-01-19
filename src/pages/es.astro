@@ -10,6 +10,8 @@ import BriefcaseIcon from "@/icons/briefcase.svg";
 import CodeIcon from "@/icons/code.svg";
 import UserCheckIcon from "@/icons/user-check.svg";
 import Layout from "@/layouts/Layout.astro";
+import HandClickIcon from "@/icons/hand-click.svg";
+import Skills from "@/components/Skills.astro";
 ---
 
 <Layout
@@ -62,14 +64,20 @@ import Layout from "@/layouts/Layout.astro";
           aprendí a evaluar el <strong>éxito de las iniciativas a través de métricas de ROI</strong>, asegurando que
           cada esfuerzo generara un valor real.
         </p>
-
-        <p>
-          Actualmente, estoy enfocado en mejorar mis habilidades técnicas, especialmente en <strong
-            >desarrollo FrontEnd con HTML, CSS y JavaScript</strong
-          >. Este portafolio es un reflejo de mi proceso de aprendizaje continuo y mi pasión por crear experiencias
-          digitales impactantes.
-        </p>
       </AboutMe>
+    </SectionContainer>
+
+    <SectionContainer id="skills">
+      <TitleSection>
+        <HandClickIcon class="size-9" />
+        Skills
+      </TitleSection>
+
+      <section class="flex flex-col gap-7">
+        <Skills type="UX/UI" title="UX/UI" />
+        <Skills type="project-management" title="Gestión de proyectos" />
+        <Skills type="methodologies" title="Metodologías" />
+      </section>
     </SectionContainer>
   </div>
 </Layout>
