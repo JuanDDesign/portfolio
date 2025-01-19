@@ -1,0 +1,89 @@
+---
+title: "Nomadas cargo"
+description: "En Nomadas Cargo, conectamos solicitudes de transporte con conductores."
+roles: ["UX/UI"]
+---
+import Card from "@/components/Card.astro";
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card>
+    ### Problema
+    Las pequeñas y medianas empresas que necesitan transportar cargas pesadas a menudo tienen dificultades para encontrar camiones capaces de llevar su carga.  
+    </Card>
+  
+  <Card>
+    ### Solución 
+    Conecta conductores y empresas en una plataforma donde las empresas pueden ofrecer su carga, y miles de conductores pueden ver las ofertas y contraofertar un precio para negociar el costo final del transporte de la carga.
+  </Card>
+
+  <Card>
+    ### Resultados
+    MVP de tres aplicaciones que conectan conductores, empresas y administradores de la plataforma.
+  </Card>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row">
+  <div class="flex-1">
+    ## Análisis
+
+    El proceso actual para que las empresas encuentren un conductor implica buscar conductores en ubicaciones específicas dentro de la ciudad y luego contactar a un intermediario que conoce a los conductores para negociar el precio.  
+    El intermediario recibe un porcentaje por conectar al conductor con la empresa.  
+    Podemos simplificar este proceso permitiendo que conductores y empresas negocien directamente.
+  
+    ## Metodología
+
+    Creamos tres aplicaciones diferentes que conectan a conductores, empresas y el módulo de gestión.  
+    Primero, entendimos el problema y luego replicamos el rol del intermediario entre conductores y empresas.
+  </div>
+
+  <video controls muted autoplay src="/projects/nomadas-cargo/on-boarding.webm" class="mx-auto h-96 flex-none"></video>
+</section>
+
+## Definición del sistema
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card alt="creación de usuarios">
+    ### Creación de usuarios
+    We create different roles for business and drivers.
+  </Card>
+  
+  <Card alt="creación de vehículo y carga">
+    ### Creación de vehículo y carga
+    Los conductores registran sus vehículos y las empresas crean sus cargas.  
+  </Card>
+
+  <Card alt="acepta ofertas y negocia">
+    ### Acepta ofertas y negocia 
+    Los conductores pueden ver ofertas de transporte y responder con una propuesta de negociación de precio.
+  </Card>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row items-center">
+  <div class="flex-1">
+    ## Creación de vehículo
+    Todos los conductores deben tener un vehículo registrado, lo que permite a las empresas conocer el tipo de vehículo que poseen y confiar en el servicio.  
+    Es un requisito tener toda la documentación en regla para mantener una cuenta activa en la plataforma.
+  </div>
+
+  <video controls muted autoplay src="/projects/nomadas-cargo/vehicle-creation.webm" class="mx-auto h-96 flex-none"></video>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row-reverse items-center">
+  <div class="flex-1">
+    ## Creación de órdenes
+    Los negocios pueden crear sus órdenes y recibir ofertas de varios transportadores
+  </div>
+  <video controls muted autoplay src="/projects/nomadas-cargo/order-creation.webm" class="mx-auto h-96 flex-none"></video>
+
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row items-center">
+  <div class="flex-1">
+    ## Negociación
+
+    Los conductores reciben información básica de la órden y con base en ello dan un precio.
+    La app tiene una calculadora simple que les ayuda a determinar el precio.
+  </div>
+
+  <video controls muted autoplay src="/projects/nomadas-cargo/accept-shipping.webm" class="mx-auto h-96 flex-none"></video>
+</section>

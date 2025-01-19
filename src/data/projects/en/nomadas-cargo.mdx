@@ -1,0 +1,92 @@
+---
+title: "Nomadas cargo"
+description: "At Nomadas Cargo, we connect transportation requests with drivers."
+roles: ["UX/UI"]
+---
+import Card from "@/components/Card.astro";
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card>
+    ### Problem 
+    Small and medium-sized businesses that need to transport heavy loads often struggle to find trucks capable of carrying their cargo.
+  </Card>
+  
+  <Card>
+    ### Solution 
+    Connect drivers and businesses on a platform where businesses can offer their cargo, and thousands of drivers can view the offers and counter with a price to negotiate a final cost for transporting the cargo.
+  </Card>
+
+  <Card>
+    ### Results 
+    MVP of three apps that connect drivers, businesses, and platform managers.
+  </Card>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row">
+  <div class="flex-1">
+    ## Analysis
+
+    The current process for businesses to find a driver involves searching for drivers in specific locations within the town and then contacting an intermediary who knows the drivers to negotiate the price.
+    The intermediary receives a percentage for connecting the driver with the business.
+    We can streamline this process by allowing drivers and businesses to negotiate directly.
+  
+    ## Methodology
+
+    We created three different apps that connect drivers, businesses, and the management module.
+    First, we understood the problem, then we replicated the role of the intermediary between drivers and businesses.
+  </div>
+
+  <video controls muted autoplay src="/projects/nomadas-cargo/on-boarding.webm" class="mx-auto h-96 flex-none"></video>
+</section>
+
+## System definition
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card alt="user creation">
+    ### User creation
+    We create different roles for business and drivers.
+  </Card>
+  
+  <Card alt="vehicle and cargo creation">
+    ### Vehicle and cargo creation
+    Drivers create their vehicles and business create their cargos.
+  </Card>
+  
+  <Card alt="accept offers and negociate">
+    ### Accept offers and negociate 
+    Drivers can see transportation offers and respond with a price negotiation.
+  </Card>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row items-center">
+  <div class="flex-1">
+    ## Vehicle creation
+
+    All drivers must have a vehicle registered, allowing businesses to understand the type of vehicle the drivers have and trust the service.
+    It is a requirement to have all documentation in order to maintain an active account on the platform.
+
+  </div>
+
+  <video controls muted autoplay src="/projects/nomadas-cargo/vehicle-creation.webm" class="mx-auto h-96 flex-none"></video>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row-reverse items-center">
+  <div class="flex-1">
+    ## Order creation
+
+    Businesses can create their orders and receive offers from different drivers.
+  </div>
+  <video controls muted autoplay src="/projects/nomadas-cargo/order-creation.webm" class="mx-auto h-96 flex-none"></video>
+
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row items-center">
+  <div class="flex-1">
+    ## Negotiation
+
+    Drivers receive basic information about the order and then provide a price.
+    The app offers a simple calculator to help them determine the price.
+  </div>
+
+  <video controls muted autoplay src="/projects/nomadas-cargo/accept-shipping.webm" class="mx-auto h-96 flex-none"></video>
+</section>
