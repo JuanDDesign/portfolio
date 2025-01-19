@@ -1,5 +1,105 @@
 ---
-title: 'Flebee - Fleet management service'
-description: 'My entrepreneurial venture enables transportation companies to efficiently manage their fleets.'
-roles: ['UX/UI', "Product Lead"]
+title: "Flebee - Fleet management service"
+description: "My entrepreneurial venture enables transportation companies to efficiently manage their fleets."
+roles: ["UX/UI", "Product Lead"]
 ---
+
+import Card from "@/components/Card.astro";
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card>
+    ### Problem 
+    Fleet managers and owners don’t have a system that helps them understand fleet behavior and measure the
+    effectiveness of their decisions.
+  </Card>
+  
+  <Card>
+    ### Solution 
+    service that allows drivers to report incidents and maintenance needs for the vehicle.
+  </Card>
+
+  <Card>
+    ### Results 
+    MVP of an app that allows drivers to report incidents and maintenance, helping managers effectively manage the information.
+  </Card>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row">
+  <div class="flex-1">
+    ## Analysis
+
+    Transportation companies faced issues with the traceability and documentation of their teams and vehicles.
+    This conclusion was drawn after conducting interviews with small transportation companies and one of the largest transportation companies in Colombia.
+  
+    ## Methodology
+
+    In the first MVP, the solution will focus solely on the documentation of users and vehicles.
+    Additionally, fleet managers will need to address incidents and maintenance issues reported by drivers.
+  </div>
+
+  <video controls muted autoplay src="/projects/flebee/intro.webm" class="mx-auto h-96 flex-none"></video>
+</section>
+
+## MVP DEFINITION
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card>
+    ### User creation 
+    We create different roles for managers and drivers.
+  </Card>
+  
+  <Card>
+    ### Vehicle creation 
+    We enable team managers to create and manage their team's vehicles.
+  </Card>
+
+  <Card>
+    ### Incidence & mantenience reports
+    Drivers report incidents and maintenance issues, which can be managed and resolved.
+  </Card>
+</section>
+
+## Design Process
+
+<section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <Card alt="user flow map" thumbnail="/projects/flebee/user-flow-map.webp">
+    ### Flow and Site Map
+    They provided an understanding of basic interactions and helped communicate the app's
+    functionalities to potential users.
+  </Card>
+  
+  <Card alt="low fidelity prototype" thumbnail="/projects/flebee/low-fi-proto.webp">
+    ### Low fidelity prototype 
+    The main functionalities, user interactions, and decision flow were specified.
+  </Card>
+  
+  <Card alt="high fidelity prototype" thumbnail="/projects/flebee/high-fi-proto.webp">
+    ### High fidelity prototype 
+    They facilitate communication of the interface to the development team and usability testing with end users.
+  </Card>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row items-center">
+  <div class="flex-1">
+    ## Minimalist
+
+    A minimalist home interface that only displays valuable information for managers and drivers ensures the user can complete tasks easily and without barriers.
+  </div>
+
+  <video controls muted autoplay src="/projects/flebee/home.webm" class="mx-auto h-96 flex-none"></video>
+</section>
+
+<section class="flex gap-6 flex-col sm:flex-row-reverse items-center">
+    <div class="flex-1 items-center justify-center">
+    ## User focus
+    The invitation and registration processes on other platforms are too difficult for drivers and managers.
+    Flebee offers a clear and easy user management process.
+    </div>
+    <video controls muted autoplay src="/projects/flebee/user-creation.webm" class="mx-auto h-96 flex-none"></video>
+
+</section>
+
+## Thanks
+
+At this moment, we are testing our MVP with potential customers.
+We have also created our own library, which you can check out via the <a href="https://components.flebee.com/" target="_blank" rel="noopener noreferrer">following link</a>
