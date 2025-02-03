@@ -1,37 +1,43 @@
 [
   {
-    "company": "Flebee",
+    "company": "Incubapp Venture Capital",
     "date": "Sept 2024 - Ahora",
-    "title": "Fundador y Jefe de Producto",
+    "title": "Senior UX / UI",
     "descriptions": [
-      "Estoy trabajando en mi propio proyecto emprendedor con una app que permite a las empresas de transporte gestionar eficientemente sus vehículos y equipos."
+      "Liderar iniciativas clave para un MVP para una startup que compite en el mercado de venta de boletos en línea."
     ]
   },
   {
     "company": "Croper.com",
-    "title": "Product Owner",
+    "title": "Product Owner - Líder UX / UI",
     "date": "Abr 2023 - Sept 2024",
     "descriptions": [
-      "Lideré iniciativas estratégicas en el mayor mercado agro de Colombia.",
-      "Aumenté la tasa de conversión del 7% al 14.2% a través de mejoras en la plataforma.",
-      "Utilicé herramientas de análisis como Clarity, Google Analytics y Power BI para identificar puntos críticos y guiar la priorización del desarrollo."
+      "Usé herramientas de análisis como Clarity, Google Analytics y Power BI para identificar puntos críticos y priorizar los esfuerzos de desarrollo.",
+      "Aumenté la tasa de conversión del 7% al 14.2% mediante mejoras en la plataforma.",
+      "Integré APIs de WhatsApp para agilizar el registro, incrementando las inscripciones con 500 nuevos usuarios por mes.",
+      "Utilicé herramientas de análisis como Clarity, Google Analytics y Power BI para identificar puntos críticos y guiar la priorización del desarrollo.",
+      "Lideré el desarrollo de dos productos clave:",
+      "Crédito para Agricultores, generando 5,000 solicitudes de préstamo en un año.",
+      "Se creó un medido de sostenibilidad, el cual permitió cerrar un contrato con uno de los supermercados más grande de Colombia."
     ]
   },
   {
-    "title": "Líder UX/UI",
+    "title": "Líder UX UI",
     "company": "Nomadas Cargo",
     "date": "Nov 2022 - Abr 2023",
     "descriptions": [
-      "Realicé investigaciones, diseño y pruebas de prototipos exhaustivas.",
-      "Utilicé métodos iterativos de prototipado para refinar los diseños basados en los comentarios de los usuarios y los conocimientos del sector."
+      "Realicé investigaciones, diseño y pruebas de prototipos, utilizando métodos iterativos de prototipado para refinar los diseños basados en la retroalimentación de los usuarios y conocimientos de la industria.",
+      "Desarrollé un MVP para un servicio de transporte de carga pesada, que incluye una página de aterrizaje, una aplicación para conductores, una aplicación para clientes de empresas que solicitan transporte y un módulo administrativo."
     ]
   },
   {
-    "title": "Jr UX/UI Designer",
-    "date": "Sep 2021 - Nov 2022",
-    "company": "Incubapp Venture Capital",
+    "title": "Diseñador UX / UI",
+    "date": "Abr 2020 - Nov 2022",
+    "company": "Rank Cv",
     "descriptions": [
-      "Diseñé y prototipé una página web fácil de usar dirigida a estudiantes sin experiencia laboral previa, ayudándolos a hacer la transición al mercado laboral."
+      "Diseñé y prototipé una página web fácil de usar, orientada a estudiantes sin experiencia laboral previa, ayudándoles a hacer la transición al mundo laboral.",
+      "Las tareas clave incluyeron análisis comparativos, creación de wireframes, prototipado y pruebas con usuarios utilizando Maze.",
+      "El diseño final fue implementado exitosamente en producción, recibiendo comentarios positivos y excelentes reseñas."
     ]
   }
 ]

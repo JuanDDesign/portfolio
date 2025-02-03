@@ -1,20 +1,24 @@
 [
   {
-    "company": "Flebee",
+    "company": "Incubapp Venture Capital",
     "date": "Sept 2024 - Now",
-    "title": "Founder and Head of Product",
+    "title": "Senior UX / UI",
     "descriptions": [
-      "I´m working my own entrepreneurial venture with an app that enables transportation companies to efficiently manage their vehicles and teams."
+      "Lead key initiatives for an MVP for a startup competing in the online ticketing market."
     ]
   },
   {
     "company": "Croper.com",
-    "title": "Product Owner",
+    "title": "Product Owner - UX / UI Lead",
     "date": "Apr 2023 - Sept 2024",
     "descriptions": [
-      "Spearheaded strategic initiatives at Colombia's largest agro marketplace.",
-      "Increase conversion rate from 7% to 14.2% through platform enhancements.",
-      "Utilized analytics tools such as Clarity, Google Analytics, Power BI to identify pain points and guide development prioritization"
+      "Leveraged analytics tools such as Clarity, Google Analytics, and Power BI to identify pain points and prioritize development efforts.",
+      "Increased conversion rate from 7% to 14.2% through platform enhancements.",
+      "Integrated WhatsApp APIs to streamline registration, boosting sign-ups by 500 new users per month.",
+      "Utilized analytics tools such as Clarity, Google Analytics, Power BI to identify pain points and guide development prioritization",
+      "Led the development of two key products:",
+      "Loan for Farmers, generating 5,000 loan requests in one year.",
+      "Sustainability Tracker, securing a major partnership with Colombia’s largest big-box retailer."
     ]
   },
   {
@@ -22,16 +26,18 @@
     "company": "Nomadas Cargo",
     "date": "Nov 2022 - Apr 2023",
     "descriptions": [
-      "Conducted thorough research, design, and prototype testing.",
-      "Utilized iterative prototyping methods to refine designs based on user feedback and industry insights."
+      "Conducted in-depth research, design, and prototype testing, leveraging iterative prototyping methods to refine designs based on user feedback and industry insights.",
+      "Developed an MVP for a heavy cargo transportation service, which includes a landing page, a driver app, a client app for companies requesting transport, and an administrative module."
     ]
   },
   {
-    "title": "Jr UX/UI Designer",
-    "date": "Sep 2021 - Nov 2022",
-    "company": "Incubapp Venture Capital",
+    "title": "UX / UI Designer",
+    "date": "Apr 2020 - Nov 2022",
+    "company": "Rank Cv",
     "descriptions": [
-      "Designed and prototyped a user-friendly webpage aimed at students with no prior job experience, helping them transition into the workforce."
+      "Designed and prototyped a user-friendly webpage tailored for students with no prior job experience, helping them transition into the workforce.",
+      "Key tasks included benchmarking, wireframing, prototyping, and user testing with Maze.",
+      "The final design was successfully deployed to production, receiving positive feedback and strong reviews."
     ]
   }
 ]
